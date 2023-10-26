@@ -1,11 +1,12 @@
 #pragma once
 
 #include"Utilities.h"
+#include"GameWindow.h"
 
 namespace ot
 {
 	template<typename T>
-	class OTTER_API OtterApp
+	class OtterApp
 	{
 	public:
 		static void Init();
@@ -20,6 +21,8 @@ namespace ot
 		OtterApp();
 
 		inline static OtterApp* sInstance{ nullptr };
+
+		GameWindow mWindow;
 
 		bool mShouldContinue{ true };
 	};

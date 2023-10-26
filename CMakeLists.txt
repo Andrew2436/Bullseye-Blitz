@@ -7,6 +7,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+
+if(WIN32)
+	add_definitions(-DOTTER_MSCPP)
+elseif(LINUX)
+	add_definitions(-DOTTER_LINUX)
+elseif(APPLE)
+	add_definitions(-DOTTER_APPLE)
+endif()
+
+add_subdirectory(glfw)
 add_subdirectory(Otter)
 add_subdirectory(Game_AW)
 
