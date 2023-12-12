@@ -14,6 +14,8 @@ namespace ot {
 	OpenGLPicture::OpenGLPicture(const std::string& file) 
 	{
 		glGenTextures(1, &texture);
+		glBindTexture(GL_TEXTURE_2D, texture);
+
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -36,6 +38,8 @@ namespace ot {
 	OpenGLPicture::OpenGLPicture(std::string&& file)
 	{
 		glGenTextures(1, &texture);
+		glBindTexture(GL_TEXTURE_2D, texture);
+
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
