@@ -1,0 +1,34 @@
+
+Rules:
+Press "Space" to fire arrow. Goal is to hit targets. Hitting target will spawn new one.
+Arrows fire in a straight line upward. Can't move archer, have to time the arrow. 
+
+Only 1 life
+
+Uniqueness:
+Shoot arrow at targets, only 1 arrow per target. If arrow misses target then lose.
+
+Targets move higher and faster with each new target (like levels)
+
+Game is difficult but beatable, has an objective. Shows a trophie after win.
+
+6 levels in game
+	Starts at level 1After level 3, target becomes significantly smaller, becomes
+	much more difficult to hit and proceed to next level.
+
+
+Special events in-game
+	-Banana/Monkey: Shoot banana which will fall down to monkey, monkey will be happy
+	and reward you with an extra life. Only unlockable AFTER level 3.
+
+	-Golden Apple: Shooting the apple will change the game, background changes,
+	arrow becomes on fire and becomes noticibly faster, arrow becomes slightly bigger,
+	character catches on fire. Monkey moves away from player too to avoid fire :)
+	Very hard to hit with speed and size. Only unlockable AFTER level 2. 
+
+Death feature- After losing game, arrow and target freeze so you can see by how far 
+	you missed. After arrow moves 75 pixels past target then game will count that as a 
+	clear loss.
+
+
+	

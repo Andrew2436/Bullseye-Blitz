@@ -17,7 +17,7 @@ namespace ot
 		virtual int GetHeight() override;
 	private:
 		unsigned int texture;
-		int width { 0 };
+		int width{ 0 };
 		int height{ 0 };
 	};
 }

@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\glad\glad.vcxproj">
@@ -158,6 +159,9 @@
     <ProjectReference Include="..\stbi\stbi.vcxproj">
       <Project>{0657288d-1d1a-4d3b-a1f4-42d2e552dc7b}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
